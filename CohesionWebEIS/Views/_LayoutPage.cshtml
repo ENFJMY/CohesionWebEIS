@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Adminty - Premium Admin Template by Colorlib </title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="#">
+    <meta name="keywords"
+          content="flat ui, admin Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="#">
+    <!-- Favicon icon -->
+    <link rel="icon" href="~/Files/assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="~/Files/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="~/Files/assets/icon/themify-icons/themify-icons.css">
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="~/Files/assets/icon/icofont/css/icofont.css">
+    <!-- feather Awesome -->
+    <link rel="stylesheet" type="text/css" href="~/Files/assets/icon/feather/css/feather.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="~/Files/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="~/Files/assets/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="~/Files/assets/scss/partials/menu/_pcmenu.scss">
+</head>
+<body>
+
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="ball-scale">
+            <div class='contain'>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+                <div class="ring">
+                    <div class="frame"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+
+                    <div class="navbar-logo">
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="feather icon-menu"></i>
+                        </a>
+                        <a href="index.html">
+                            <img class="img-fluid" src="~/Files/assets/images/CohesionLogo.png" alt="Theme-Logo" />
+                        </a>
+                        <a class="mobile-options">
+                            <i class="feather icon-more-horizontal"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-container">
+                        <ul class="nav-left">
+                            <li class="header-search">
+                                <div class="main-search morphsearch-search">
+                                    <div class="input-group">
+                                        <span class="input-group-prepend search-close">
+                                            <i class="feather icon-x input-group-text"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Enter Keyword">
+                                        <span class="input-group-append search-btn">
+                                            <i class="feather icon-search input-group-text"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                                    <i class="full-screen feather icon-maximize"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="user-profile header-notification">
+                                <div class="dropdown-primary dropdown">
+                                    <div class="dropdown-toggle" data-toggle="dropdown">
+                                        <span>[@Session["userDepartment"]]  @Session["userName"]님 </span>
+                                        <i class="feather icon-chevron-down"></i>
+                                    </div>
+                                    <ul class="show-notification profile-notification dropdown-menu"
+                                        data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                        <li>
+                                            <a href="https://localhost:44389/Login">
+                                                <i class="feather icon-log-out"></i> Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+                    <nav class="pcoded-navbar">
+
+                        <ul class="pcoded-item pcoded-left-item" item-border="true" item-border-style="none" subitem-border="true">
+                            <li class="pcoded-hasmenu pcoded-trigger" dropdown-icon="style1" subitem-icon="style1">
+                                <a href="javascript:void(0)">
+                                    <span class="pcoded-micon"><i class="feather icon-home"></i></span>
+                                    <span class="pcoded-mtext">대시보드</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="pcoded-navigatio-lavel" menu-title-theme="theme5"></div>
+                        <ul class="pcoded-item pcoded-left-item" item-border="true" item-border-style="none" subitem-border="true">
+                            <li class="pcoded-hasmenu pcoded-trigger" dropdown-icon="style1" subitem-icon="style1">
+                                <a href="javascript:void(0)">
+                                    <span class="pcoded-micon"><i class="feather icon-shopping-cart"></i></span>
+                                    <span class="pcoded-mtext">주문 및 구매</span>
+                                </a>
+                                <ul class="pcoded-submenu">
+                                    <li class="pcoded-hasmenu ">
+
+                                    <li class="">
+                                        <a href="chart-google.html">
+                                            <span class="pcoded-mtext">주문 내역 조회</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="chart-google.html">
+                                            <span class="pcoded-mtext">출고 내역 조회</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="chart-echart.html">
+                                            <span class="pcoded-mtext">구매 내역 조회</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="chart-echart.html">
+                                            <span class="pcoded-mtext">입고 내역 조회</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="pcoded-navigatio-lavel" menu-title-theme="theme5"></div>
+
+                        <ul class="pcoded-item pcoded-left-item" item-border="true" item-border-style="none" subitem-border="true">
+                            <li class="pcoded-hasmenu pcoded-trigger" dropdown-icon="style1" subitem-icon="style1">
+                                <a href="javascript:void(0)">
+                                    <span class="pcoded-micon"><i class="feather icon-pie-chart"></i></span>
+                                    <span class="pcoded-mtext">종합 리포트 조회</span>
+                                </a>
+                                <ul class="pcoded-submenu">
+                                    <li class="">
+                                        <a href="chart-google.html">
+                                            <span class="pcoded-mtext">계획대비 생산 실적 조회</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="chart-echart.html">
+                                            <span class="pcoded-mtext">제조 종합 효율 조회</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="pcoded-navigatio-lavel" menu-title-theme="theme5"></div>
+
+                        <ul class="pcoded-item pcoded-left-item" item-border="true" item-border-style="none" subitem-border="true">
+                            <li class="pcoded-hasmenu pcoded-trigger" dropdown-icon="style1" subitem-icon="style1">
+                                <a href="javascript:void(0)">
+                                    <span class="pcoded-micon"><i class="feather icon-airplay"></i></span>
+
+                                    <span class="pcoded-mtext">생산 데이터 조회</span>
+                                </a>
+                                <ul class="pcoded-submenu">
+                                    <li class="">
+                                        <a href="chart-google.html">
+                                            <span class="pcoded-mtext">계획대비 생산 실적 조회</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="chart-echart.html">
+                                            <span class="pcoded-mtext">제조 종합 효율 조회</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="chart-chartjs.html">
+                                            <span class="pcoded-mtext">검사 데이터 조회</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="chart-list.html">
+                                            <span class="pcoded-mtext">생산 비가동 조회</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="chart-float.html">
+                                            <span class="pcoded-mtext">불량 이력 조회</span>
+                                        </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="chart-knob.html">
+                                            <span class="pcoded-mtext">Lot 이력 조회</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                    <div class="pcoded-content">
+                        <div class="pcoded-inner-content">
+                            <!-- Main-body start -->
+                            <div class="main-body">
+                                @RenderBody()
+                            </div>
+                            <div id="styleSelector">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Warning Section Ends -->
+    <!-- Required Jquery -->
+    <script type="text/javascript" src="~/Files/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Files/bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="~/Files/bower_components/popper.js/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="~/Files/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="~/Files/bower_components/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="~/Files/bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="~/Files/bower_components/modernizr/feature-detects/css-scrollbars.js"></script>
+
+    <!-- i18next.min.js -->
+    <script type="text/javascript" src="~/Files/bower_components/i18next/i18next.min.js"></script>
+
+    <script type="text/javascript"
+            src="~/Files/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script>
+
+    <script type="text/javascript"
+            src="~/Files/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
+
+    <script type="text/javascript" src="~/Files/bower_components/jquery-i18next/jquery-i18next.min.js"></script>
+    <script src="~/Files/assets/js/pcoded.min.js"></script>
+    <script src="~/Files/assets/js/vartical-layout.min.js"></script>
+    <script src="~/Files/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- Custom js -->
+    <script type="text/javascript" src="~/Files/assets/js/script.js"></script>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>
